@@ -13,10 +13,10 @@
         "id": 2,
         "title": "What is the purpose of HTML?",
         "answer":"D",
-        "a":"separate the document content from its presentation,which allows web developers to control how a web page looks and feels",
-        "b":"add functionality to a web page or application, making it more dynamic and user-friendly",
-        "c":"simplify the process of adding interactivity and dynamic behavior to web pages, improving user experience and reducing development time",
-        "d":"structure the content of a web page and to define how it is displayed in a browser."
+        "a":"Separate the document content from its presentation,which allows web developers to control how a web page looks and feels",
+        "b":"Add functionality to a web page or application, making it more dynamic and user-friendly",
+        "c":"Simplify the process of adding interactivity and dynamic behavior to web pages, improving user experience and reducing development time",
+        "d":"Structure the content of a web page and to define how it is displayed in a browser."
     },
     {
         "id": 3,

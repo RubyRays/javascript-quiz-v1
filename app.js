@@ -76,7 +76,7 @@ function newQuestion(){
             $("#C").html(correctAnswerSize +"/"+ (correctAnswerSize + wrongAnswerSize));
             $("#D").html(correctAnswerSize / (correctAnswerSize+wrongAnswerSize) *100 + "%");
             $(".next1").html("Refresh page to try again");
-            $(".next1").prop("disabled", false);
+            $(".next1").prop("disabled", true);
             
      }else{
         var questionId = randomQuestionsList.pop();

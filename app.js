@@ -63,7 +63,6 @@
         $(".rbutton").css("background-color", "white");
         $(".rbutton").prop("disabled", false);
         $(".next1").prop("disabled", true);
-        console.log("disabled?");
         newQuestion();
         
     })
@@ -72,7 +71,7 @@
 
 
 function newQuestion(){    
-    // $(".next1").prop("disabled", true);
+    
     if(randomQuestionsList.length == 0){
             
             $(".heading").html("Quiz Ended");
@@ -81,7 +80,7 @@ function newQuestion(){
             $("#C").html("You scored: " +correctAnswerSize +"/"+ (correctAnswerSize + wrongAnswerSize));
             $("#D").html("Your percentage calculated was: "+correctAnswerSize / (correctAnswerSize+wrongAnswerSize) *100 + "%");
             $(".next1").html("Refresh page to try again");
-            // $(".next1").prop("disabled", true);
+          
             
      }else{
         var questionId = randomQuestionsList.pop();

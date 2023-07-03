@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "What is HTML?",
+        "answer": "C",
+        "a":"High Texture Model List",
+        "b":"Heap Transfer Management Location",
+        "c":"Hypertext Markup Language",
+        "d":"Happy Time Mall League"
+        
+    },
+    {
+        "id": 2,
+        "title": "What is the purpose of HTML?",
+        "answer":"D",
+        "a":"separate the document content from its presentation,which allows web developers to control how a web page looks and feels",
+        "b":"add functionality to a web page or application, making it more dynamic and user-friendly",
+        "c":"simplify the process of adding interactivity and dynamic behavior to web pages, improving user experience and reducing development time",
+        "d":"structure the content of a web page and to define how it is displayed in a browser."
+    },
+    {
+        "id": 3,
+        "title": "What is JavaScript? ",
+        "answer":"D",
+        "a":"A scripting language used for automation, web development, and other tasks",
+        "b":"A high-level general-purpose programming language used for web development, scientific computing, data analysis, artificial intelligence, and more.",
+        "c":"A programming language designed for platform independence and used for developing a variety of applications. ",
+        "d":"A scripting language used to create dynamic and interactive web pages and web applications."
+    },
+        {
+        "id": 4,
+        "title": "What is CSS?",
+        "answer":"D",
+        "a":"CSS stands for Cascade Styling Sheets, which is used to structure the content of a web page and to define how it is displayed in a browser.",
+        "b":"CSS stands for Cascading Style Sheets, which is used to structure the content of a web page and to define how it is displayed in a browser.",
+        "c":"CSS stands for Cascade Styling Sheets, which is used to style the visual appearance of a web page and separate it from its content.",
+        "d":"CSS stands for Cascading Style Sheets, which is used to style the visual appearance of a web page and separate it from its content."
+    }
+    
+]

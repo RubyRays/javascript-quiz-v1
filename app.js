@@ -9,7 +9,7 @@
     // correctAnswer.push("D");
     //var q_id=0;
     let randomQuestionsList=[];
-      
+    
 
     function getRandomQuestionsList(size) {
     const list = [];
@@ -27,12 +27,14 @@
     $(document).ready(function(){
         randomQuestionsList = getRandomQuestionsList(4)
         console.log(randomQuestionsList);
+        $(".next1").prop("disabled", true);
     })
 
 
     
     if(backgroundColor){
         $("body").css("background-color", backgroundColor);
+        
     }   
 
     $(".rbutton").click(function(event) {
@@ -52,6 +54,7 @@
     })
     $(".rbutton").click(function(){
         $(".rbutton").not(this).prop("disabled", true);
+        $(".next1").prop("disabled", false);
     })
 
     // function nextQuestion(){
@@ -59,24 +62,26 @@
         localStorage.clear();
         $(".rbutton").css("background-color", "white");
         $(".rbutton").prop("disabled", false);
-
-
+        $(".next1").prop("disabled", true);
+        console.log("disabled?");
         newQuestion();
+        
     })
     
 // }
 
 
 function newQuestion(){    
+    // $(".next1").prop("disabled", true);
     if(randomQuestionsList.length == 0){
             
             $(".heading").html("Quiz Ended");
             $("#A").html("Correct answers: "+ correctAnswerSize);
             $("#B").html("Wrong answers: " + wrongAnswerSize );
-            $("#C").html(correctAnswerSize +"/"+ (correctAnswerSize + wrongAnswerSize));
-            $("#D").html(correctAnswerSize / (correctAnswerSize+wrongAnswerSize) *100 + "%");
+            $("#C").html("You scored: " +correctAnswerSize +"/"+ (correctAnswerSize + wrongAnswerSize));
+            $("#D").html("Your percentage calculated was: "+correctAnswerSize / (correctAnswerSize+wrongAnswerSize) *100 + "%");
             $(".next1").html("Refresh page to try again");
-            $(".next1").prop("disabled", true);
+            // $(".next1").prop("disabled", true);
             
      }else{
         var questionId = randomQuestionsList.pop();
@@ -88,7 +93,7 @@ function newQuestion(){
                 $("#C").html(item.c);
                 $("#D").html(item.d);
                 correctAnswer.push(item.answer);
-                $(".next1").prop("disabled", false); 
+                $(".next1").prop("disabled", true); 
 
             })        
      }

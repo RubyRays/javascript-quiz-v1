@@ -75,7 +75,7 @@ function newQuestion(){
             $("#B").html("Wrong answers: " + wrongAnswerSize );
             $("#C").html(correctAnswerSize +"/"+ (correctAnswerSize + wrongAnswerSize));
             $("#D").html(correctAnswerSize / (correctAnswerSize+wrongAnswerSize) *100 + "%");
-            $(".next1").html("Try again");
+            $(".next1").html("Refresh page to try again");
             $(".next1").prop("disabled", false);
             
      }else{
